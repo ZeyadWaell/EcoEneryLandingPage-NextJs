@@ -24,7 +24,6 @@ export function MainContent({ lang, setLang }: MainContentProps) {
       animate={{ opacity: 1 }}
       className="min-h-screen relative overflow-hidden"
     >
-      <ParallaxBackground />
       
       <div className="relative z-10">
         <Navbar lang={lang} onLanguageChange={() => {}} />
@@ -53,7 +52,6 @@ export function MainContent({ lang, setLang }: MainContentProps) {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
         >
-          <ImageSlider />
         </motion.div>
 
         <Benefits lang={lang} />

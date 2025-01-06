@@ -34,7 +34,7 @@ export default function Benefits({ lang }: BenefitsProps) {
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section id ="benefits" className="py-20 bg-[#2C3E50]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

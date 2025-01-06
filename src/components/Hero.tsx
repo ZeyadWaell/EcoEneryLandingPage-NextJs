@@ -46,10 +46,10 @@ export default function Hero({ lang }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-wrap justify-center gap-4 mb-12"
           >
-            <Button variant="primary" className="animate-float">
+            <Button  href='#contact' variant="primary" className="animate-float">
               {t.cta.primary}
             </Button>
-            <Button variant="secondary" className="animate-float" style={{ animationDelay: '0.2s' }}>
+            <Button href='#contact' variant="secondary" className="animate-float" style={{ animationDelay: '0.2s' }}>
               {t.cta.secondary}
             </Button>
           </motion.div>

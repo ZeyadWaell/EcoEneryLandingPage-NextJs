@@ -27,7 +27,7 @@ interface TestimonialsProps {
 
 export default function Testimonials({ lang }: TestimonialsProps) {
   return (
-    <section className="py-20 bg-[#2C3E50]">
+    <section id = "testimonials" className="py-20 bg-[#2C3E50]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

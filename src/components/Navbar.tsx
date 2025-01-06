@@ -23,12 +23,15 @@ export default function Navbar({ lang, onLanguageChange }: NavbarProps) {
           </div>
           
           <div className={`hidden md:flex items-center space-x-8 ${dir === 'rtl' ? 'flex-row-reverse space-x-reverse' : ''}`}>
-            <a href="#features" className="text-gray-600 hover:text-[#2C3E50]">{t.features}</a>
+            <a href="#testimonialss" className="text-gray-600 hover:text-[#2C3E50]">{t.features}</a>
             <a href="#benefits" className="text-gray-600 hover:text-[#2C3E50]">{t.benefits}</a>
             <a href="#how-it-works" className="text-gray-600 hover:text-[#2C3E50]">{t.howItWorks}</a>
-            <LanguageToggle currentLang={lang} onToggle={onLanguageChange} />
-            <Button variant="primary">{t.getStarted}</Button>
-          </div>
+            <Button
+  href="#contact"
+  variant="primary"
+>
+  {t.getStarted}
+</Button>          </div>
         </div>
       </div>
     </nav>
