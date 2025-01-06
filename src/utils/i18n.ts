@@ -61,7 +61,7 @@ export const translations = {
       phone: 'Phone',
       email: 'Email',
       address: 'Address',
-      addressDetails: 'Riyadh, Saudi Arabia',
+      addressDetails: 'Al Fayoum , Egypt',
       form: {
         name: 'Name',
         email: 'Email',

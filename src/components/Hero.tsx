@@ -17,8 +17,17 @@ export default function Hero({ lang }: HeroProps) {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a2a3a] to-[#2C3E50] opacity-90" />
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-      </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="../../images/test.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+              </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -26,7 +35,7 @@ export default function Hero({ lang }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6 gradient-text"
+            className="text-5xl md:text-7xl font-bold text-white mb-6 "
           >
             {t.title}
           </motion.h1>
