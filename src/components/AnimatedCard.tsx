@@ -6,6 +6,7 @@ interface AnimatedCardProps {
   delay?: number;
 }
 
+
 export function AnimatedCard({ children, delay = 0 }: AnimatedCardProps) {
   return (
     <motion.div
