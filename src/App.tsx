@@ -15,6 +15,7 @@ import { languages } from './utils/languages';
 import { LoadingScreen } from './components/LoadingScreen';
 import { MainContent } from './components/MainContent';
 
+
 export default function App() {
   const [lang, setLang] = useState<LanguageCode>('en');
   const [isLoading, setIsLoading] = useState(true);
